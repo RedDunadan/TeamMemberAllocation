@@ -1,10 +1,9 @@
 import {useState} from 'react';
 
 
-const Employee = () => {
+const Employees = () => {
 
   const [employees, setEmployees] = useState([
-
     {
     id: 1,
     fullName: "Bob Jones",
@@ -89,14 +88,17 @@ const Employee = () => {
     gender: "male",
     teamName: "TeamD"
   }
-    
   ])
   
   return (
     <main>
-
+      {
+        employees.map((employee)=> (
+          <p>{employee.fullName}</p>
+        ))
+      }
     </main>
   )
 }
 
-export default Employee;
+export default Employees;
