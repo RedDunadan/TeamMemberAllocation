@@ -17,3 +17,9 @@ h1,h2,h3,p {
 .grey-text {
   color: grey;
 }
+
+@media only screen and (max-width:600px){
+  .card-collection{
+    grid-template-columns: 1fr;
+  }
+}
